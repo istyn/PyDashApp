@@ -1,2 +1,2 @@
 # PyDashApp
- This is a simple python application demonstrating plot.ly dash functionality.
+ This simple dash application graphs the instantaneous flow rate of the Linville River.
