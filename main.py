@@ -31,7 +31,7 @@ df.info()
 
 
 # compose the graph
-fig = px.line(df, x="datetime", y="00060", title='Linville River Flow Gauge')
+fig = px.line(df, x="datetime", y="00060", title='Linville River Flow Gauge').show()
 
 # Initialize the app
 app = Dash(__name__)
@@ -39,7 +39,7 @@ app = Dash(__name__)
 #App layout
 app.layout = html.Div([
     html.Div(children='Linville River Flow Gauge'),
-    fig.show(),
+    html.Div(children=fig),
     dash_table.DataTable(data=df.to_dict('records'), page_size=100)
 ])
 
